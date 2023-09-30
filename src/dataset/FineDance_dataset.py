@@ -13,8 +13,8 @@ sys.path.insert(0,'.')
 
 class FineDance_Smpl(data.Dataset):
     def __init__(self, args, istrain):
-        self.motion_dir = '/data2/lrh/dataset/fine_dance/origin/motion_feature319'
-        self.music_dir = '/data2/lrh/dataset/fine_dance/origin/music_feature35_edge'
+        self.motion_dir = 'data/motion'
+        self.music_dir = 'data/music_npy'
         self.istrain = istrain
         self.datasplit = args.datasplit
         self.seq_len = args.full_seq_len

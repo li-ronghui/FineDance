@@ -39,3 +39,19 @@ We spilt FineDance dataset into train, val and test sets in two ways: FineDance@
 2. The train/val/test set of FineDance@Dancer was divided by different dancers, which test set contains fewer dance genres, yet the same dancer won't appear in different sets.
 
 If you use this dataset for dance generation, we recommend you to use the split of FineDance@Genre.
+
+
+## Acknowledgments
+We would like to express our sincere gratitude to Dr [Yan Zhang](https://yz-cnsdqz.github.io/) and [Yulun Zhang](https://yulunzhang.com/) for their invaluable guidance and insights during the course of our research.
+
+## Citation
+When using the code/figures/data/video/etc., please cite our work
+```
+@inproceedings{li2023finedance,
+  title={FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance Generation},
+  author={Li, Ronghui and Zhao, Junfan and Zhang, Yachao and Su, Mingyang and Ren, Zeping and Zhang, Han and Tang, Yansong and Li, Xiu},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={10234--10243},
+  year={2023}
+}
+```

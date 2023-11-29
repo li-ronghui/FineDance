@@ -1,5 +1,15 @@
 # [FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance Generation (ICCV 2023)](https://github.com/li-ronghui/FineDance)
 
+[[Project Page](https://li-ronghui.github.io/finedance)] | [[Preprint](https://arxiv.org/abs/2302.03665)] | [[pdf](https://arxiv.org/pdf/2212.03741.pdf)] | [[video](https://li-ronghui.github.io/finedance)]
+
+
+
+The official PyTorch implementation of the paper [**"Human Motion Diffusion Model"**](https://arxiv.org/abs/2209.14916).
+
+Please visit our [**webpage**](https://guytevet.github.io/mdm-page/) for more details.
+
+![teaser](https://github.com/GuyTevet/mdm-page/raw/main/static/figures/github.gif)
+
 ## Teaser
 
 <img src="teaser/teaser.png">

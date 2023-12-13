@@ -89,7 +89,7 @@ If you use this dataset for dance generation, we recommend you to use the split 
 We would like to express our sincere gratitude to Dr [Yan Zhang](https://yz-cnsdqz.github.io/) and [Yulun Zhang](https://yulunzhang.com/) for their invaluable guidance and insights during the course of our research.
 
 This code is standing on the shoulders of giants. We want to thank the following contributors that our code is based on:
-[EDGE](https://github.com/Stanford-TML/EDGE/tree/main),[MDM](https://github.com/Stanford-TML/EDGE/tree/main),[Adan](https://github.com/lucidrains/Adan-pytorch),[Diffusion](https://github.com/lucidrains/denoising-diffusion-pytorch),SMPLX(https://smpl-x.is.tue.mpg.de/).
+[EDGE](https://github.com/Stanford-TML/EDGE/tree/main),[MDM](https://github.com/Stanford-TML/EDGE/tree/main),[Adan](https://github.com/lucidrains/Adan-pytorch),[Diffusion](https://github.com/lucidrains/denoising-diffusion-pytorch),[SMPLX](https://smpl-x.is.tue.mpg.de/).
 
 ## Citation
 When using the code/figures/data/video/etc., please cite our work

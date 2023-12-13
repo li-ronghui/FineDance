@@ -3,18 +3,16 @@
 [[Project Page](https://li-ronghui.github.io/finedance)] | [[Preprint](https://arxiv.org/abs/2302.03665)] | [[pdf](https://arxiv.org/pdf/2212.03741.pdf)] | [[video](https://li-ronghui.github.io/finedance)]
 
 
-## Teaser
+### Teaser
 
 <img src="teaser/teaser.png">
 
-## Dataset
-
-### Download
+### Download the FineDance Dataset
 
 The part(7.7 hours) of FineDance dataset can be downloaded at [Google Drive](https://drive.google.com/file/d/1zQvWG9I0H4U3Zrm8d_QD_ehenZvqfQfS/view?usp=sharing)
 
 
-### Descriptions
+### Dataset Descriptions
 Put the downloaded FineDance data into './data'. 
 
 The data directory is organized as follows:

@@ -3,6 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# my
+experiments
+data/finedance
+generated
+eval
+assets/checkpoints/*
+assets/smpl_model/*
+assets/ffmpeg-6.0-amd64-static/*
+assets/NORMAL_new.obj
+
 # C extensions
 *.so
 

@@ -1,7 +1,7 @@
 import multiprocessing
 import os
 from zlib import Z_FULL_FLUSH
-# os.environ["WANDB_API_KEY"] = "your WANDB_API_KEY" # "8703d7348effc00c329d216eb3eed220e0e2912d"
+# os.environ["WANDB_API_KEY"] = "your WANDB_API_KEY" # 
 # os.environ["WANDB_MODE"] = "online"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 import pickle

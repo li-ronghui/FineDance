@@ -127,8 +127,8 @@ class MovieMaker():
                 jaw_pose = torch.zeros([motion.shape[0], 3]).to(motion),
                 leye_pose = torch.zeros([motion.shape[0], 3]).to(motion),
                 reye_pose = torch.zeros([motion.shape[0], 3]).to(motion),
-                left_hand_pose = torch.zeros([motion.shape[0], 45]).to(motion),
-                right_hand_pose = torch.zeros([motion.shape[0], 45]).to(motion),
+                left_hand_pose = motion[:,69:69+45],
+                right_hand_pose = motion[:,69+45:],
                 expression= torch.zeros([motion.shape[0], 10]).to(motion),
                 )
         
@@ -240,8 +240,8 @@ class MovieMaker():
                 jaw_pose = torch.zeros([seq_rot.shape[0], 3]).to(seq_rot),
                 leye_pose = torch.zeros([seq_rot.shape[0], 3]).to(seq_rot),
                 reye_pose = torch.zeros([seq_rot.shape[0], 3]).to(seq_rot),
-                left_hand_pose = torch.zeros([seq_rot.shape[0], 45]).to(seq_rot),
-                right_hand_pose = torch.zeros([seq_rot.shape[0], 45]).to(seq_rot),
+                left_hand_pose = seq_rot[:,69:69+45],
+                right_hand_pose = seq_rot[:,69+45:],
                 expression= torch.zeros([seq_rot.shape[0], 10]).to(seq_rot),
                 )
         
@@ -250,10 +250,8 @@ class MovieMaker():
         
         meshes = []
         for i in range(B):
-            if not int(i) % 4 == 0:
-                continue
-            if int(i) > 320:
-                break
+            # if int(i) > 20:
+            #     break
             view = []
             for v in vertices[i]:
                 # vertices[:,2] *= -1
@@ -310,7 +308,7 @@ def motion_data_load_process(motionfile):
     elif motionfile.split(".")[-1] == "npy":
         modata = np.load(motionfile)
         print("modata.shape", modata.shape)
-        if modata.shape[-1] == 315:
+        if modata.shape[-1] == 315:             # first 3-dim is root translation
             print("modata.shape is:", modata.shape)
             rot6d = torch.from_numpy(modata[:,3:])
             T,C = rot6d.shape
